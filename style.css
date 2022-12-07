@@ -103,7 +103,25 @@ nav {
 }
 
 header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     background-color: var(--white);
+}
+
+.search-icon,
+.bell-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.avatar-small {
+    width: 32px;
+    height: 32px;
+}
+
+.avatar-big {
+    width: 64px;
+    height: 64px;
 }
 
 main {
