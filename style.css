@@ -114,6 +114,11 @@ header {
     grid-template-columns: 1fr 8fr;
 }
 
+.header-profile {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+}
+
 .header-greeting {
     display: grid;
     grid-template-columns: 1fr 8fr;
