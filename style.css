@@ -125,6 +125,11 @@ header {
     grid-template-rows: 1fr 1fr;
 }
 
+.header-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 .avatar-big {
     grid-row: 1 / 3;
 }
