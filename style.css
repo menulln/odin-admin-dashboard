@@ -162,8 +162,15 @@ header {
 }
 
 .header-buttons > button {
-    width: calc(64px + 2vw);
+    width: calc(72px + 2vw);
     height: calc(32px + 1vh);
+    background-color: var(--primary-clr);
+    color: var(--white);
+    font-weight: 700;
+    font-size: calc(0.5rem + 0.5vw);
+    border: 0;
+    border-radius: 24px;
+
 }
 
 .search-icon,
