@@ -19,6 +19,7 @@ body {
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 5fr;
     min-height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 }
 
 nav {
