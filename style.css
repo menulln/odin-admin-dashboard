@@ -207,10 +207,13 @@ main {
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
     background-color: var(--dark-white);
+    color: var(--black);
 }
 
 .main-heading {
     margin: 24px 0 0 12px;
+    font-weight: 700;
+    font-size: calc(0.75rem + 0.5vw);
 }
 
 .projects {
@@ -220,18 +223,38 @@ main {
 .project-box {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 12px;
-    padding: 12px;
+    gap: 24px;
+    padding: 16px;
 }
 
 .card {
+    display: grid;
+    grid-template-rows: 1fr 6fr 1fr;
     background-color: var(--white);
-    height: 200px;
+    height: 170px;
+    border-left: 8px solid var(--accent-clr);
+    border-radius: 8px;
+    padding: 32px 24px 24px 24px;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-weight: 700;
+    font-size: calc(0.65rem + 0.5vw);
+}
+
+.card-content {
+    margin-top: 6px;
+}
+
+.card-buttons {
+    justify-self: end;
 }
 
 .card-buttons > img {
-    width: 32px;
-    height: 32px;
+    width: 24px;
+    height: 24px;
+    margin-left: 24px;
 }
 
 .announcements-box {
