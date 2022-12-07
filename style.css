@@ -8,6 +8,7 @@
     --dark-white: #E4E4E4;
     --black: #0A0A0A;
     --light-black: #121212;
+    --gray: #636363;
     --primary-clr: #1992D4;
     --light-primary-clr: #1E9FE4;
     --dark-primary-clr: #1585C2;
@@ -17,7 +18,7 @@
 body {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
     min-height: 100vh;
     font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 }
@@ -204,8 +205,7 @@ header > div > p {
 
 main {
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 5fr 2fr;
     background-color: var(--dark-white);
     color: var(--black);
 }
@@ -260,7 +260,6 @@ main {
 .announcements-box {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 16px;
     background-color: var(--white);
     margin: 12px;
     padding: 24px;
@@ -269,16 +268,29 @@ main {
 }
 
 .announcement {
+    margin-top: 12px;
+    padding-bottom: 12px;
     border-bottom: 1px solid var(--dark-white);
 }
 
+.announcement:first-of-type {
+    margin-top: 0;
+    margin-bottom: 6px;
+}
+
 .announcement:last-of-type {
+    padding-bottom: 0;
     border-bottom: 0;
 }
 
 .announcement-title {
     font-weight: 700;
-    font-size: calc(0.55rem + 0.5vw);
+    font-size: calc(0.55rem + 0.55vw);
+    margin-bottom: 2px;
+}
+
+.announcement-content {
+    font-size: calc(0.5rem + 0.5vw);
 }
 
 .trending {
@@ -289,6 +301,7 @@ main {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 16px;
+    row-gap: 24px;
     background-color: var(--white);
     margin: 12px;
     padding: 24px;
@@ -300,7 +313,7 @@ main {
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 1fr;
-    column-gap: 4px;
+    column-gap: 12px;
 }
 
 .trend > * {
@@ -321,4 +334,10 @@ main {
 
 .trending-title {
     grid-row: 2 / 3;
+}
+
+.card-content,
+.announcement-content,
+.trending-title {
+    color: var(--gray);
 }
