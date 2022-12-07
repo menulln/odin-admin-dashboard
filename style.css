@@ -23,12 +23,16 @@ body {
 }
 
 nav {
+    grid-row: 1 / 3;
+    background-color: var(--primary-clr);
+}
+
+.nav-wrapper {
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: repeat(12, 1fr);
     align-items: center;
-    grid-row: 1 / 3;
-    background-color: var(--primary-clr);
+    padding: 12px;
 }
 
 .logo-icon,
@@ -46,17 +50,17 @@ nav {
     height: 24px;
 }
 
-nav > h3,
-nav > p {
+.nav-wrapper > h3,
+.nav-wrapper > p {
     color: var(--white);
     padding-left: 1vw;
 }
 
-nav > h3 {
+.nav-wrapper > h3 {
     font-size: calc(0.5rem + 1vw);
 }
 
-nav > p {
+.nav-wrapper > p {
     font-weight: 700;
 }
 
