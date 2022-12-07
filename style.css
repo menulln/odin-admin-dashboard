@@ -130,14 +130,15 @@ header {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.avatar-big {
-    grid-row: 1 / 3;
-}
-
 .search-icon,
 .bell-icon {
     width: 24px;
     height: 24px;
+}
+
+.avatar-small,
+.avatar-big {
+    border-radius: 50%;
 }
 
 .avatar-small {
@@ -148,6 +149,7 @@ header {
 .avatar-big {
     width: 64px;
     height: 64px;
+    grid-row: 1 / 3;
 }
 
 header > div > p {
