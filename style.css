@@ -38,7 +38,7 @@ nav {
 
 .logo-icon,
 .nav-icon {
-    justify-self: end;
+    justify-self: center;
 }
 
 .logo-icon {
@@ -62,6 +62,7 @@ nav {
 }
 
 .nav-wrapper > p {
+    font-size: calc(0.5rem + 0.75vw);
     font-weight: 700;
 }
 
