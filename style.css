@@ -17,7 +17,7 @@
 body {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 1fr 4fr;
     min-height: 100vh;
     font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 }
@@ -106,28 +106,64 @@ header {
     display: grid;
     grid-template-columns: 2fr 1fr;
     background-color: var(--white);
-    padding: 12px 48px;
+    padding: 0px 48px;
+    color: var(--black);
+    font-weight: 700;
 }
 
 .header-search {
     display: grid;
-    grid-template-columns: 1fr 8fr;
+    grid-template-columns: 1fr 16fr;
+    align-items: center;
+}
+
+.search-icon {
+    justify-self: start;
+}
+
+.search-bar {
+    justify-self: start;
+    width: 90%;
+    height: calc(12px + 1vw);
 }
 
 .header-profile {
     display: grid;
-    grid-template-columns: 1fr 1fr 3fr;
+    grid-template-columns: 1fr 1fr 2fr;
+    justify-items: end;
+    align-items: center;
 }
 
 .header-greeting {
     display: grid;
     grid-template-columns: 1fr 8fr;
     grid-template-rows: 1fr 1fr;
+    column-gap: 0.5vw;
+}
+
+.greeting {
+    align-self: end;
+}
+
+.avatar-big {
+    grid-row: 1 / 3;
+    align-self: center;
+}
+
+.name-big {
+ font-size: calc(0.75rem + 0.75vw);
 }
 
 .header-buttons {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    justify-items: end;
+    align-items: center;
+}
+
+.header-buttons > button {
+    width: calc(64px + 2vw);
+    height: calc(32px + 1vh);
 }
 
 .search-icon,
@@ -149,7 +185,6 @@ header {
 .avatar-big {
     width: 64px;
     height: 64px;
-    grid-row: 1 / 3;
 }
 
 header > div > p {
