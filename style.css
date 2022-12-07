@@ -5,11 +5,31 @@
 
 :root {
     --white: #FAFAFA;
-    --dark-white: #DFDFDF;
+    --dark-white: #E4E4E4;
     --black: #0A0A0A;
     --light-black: #121212;
     --primary-clr: #1992D4;
     --light-primary-clr: #1E9FE4;
     --dark-primary-clr: #1585C2;
     --accent-clr: #F0B429;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+    min-height: 100vh;
+}
+
+nav {
+    grid-row: 1 / 3;
+    background-color: var(--primary-clr);
+}
+
+header {
+    background-color: var(--white);
+}
+
+main {
+    background-color: var(--dark-white);
 }
