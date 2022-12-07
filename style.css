@@ -203,5 +203,31 @@ header > div > p {
 }
 
 main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
     background-color: var(--dark-white);
+}
+
+.projects {
+    grid-row: 1 / 3;
+}
+
+.project-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.trending {
+    grid-column: 2 / 3;
+}
+
+.card-buttons > img {
+    width: 32px;
+    height: 32px;
+}
+
+.trending-avatar {
+    width: 64px;
+    height: 64px;
 }
