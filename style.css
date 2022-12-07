@@ -106,6 +106,12 @@ header {
     display: grid;
     grid-template-columns: 2fr 1fr;
     background-color: var(--white);
+    padding: 12px 48px;
+}
+
+.header-search {
+    display: grid;
+    grid-template-columns: 1fr 8fr;
 }
 
 .search-icon,
@@ -122,6 +128,10 @@ header {
 .avatar-big {
     width: 64px;
     height: 64px;
+}
+
+header > div > p {
+    display: inline;
 }
 
 main {
