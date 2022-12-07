@@ -31,14 +31,6 @@ nav {
     background-color: var(--primary-clr);
 }
 
-header {
-    background-color: var(--white);
-}
-
-main {
-    background-color: var(--dark-white);
-}
-
 .logo-icon,
 .nav-icon {
     justify-self: end;
@@ -66,4 +58,12 @@ nav > h3 {
 
 nav > p {
     font-weight: 700;
+}
+
+header {
+    background-color: var(--white);
+}
+
+main {
+    background-color: var(--dark-white);
 }
