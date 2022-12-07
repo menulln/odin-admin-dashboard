@@ -114,6 +114,16 @@ header {
     grid-template-columns: 1fr 8fr;
 }
 
+.header-greeting {
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.avatar-big {
+    grid-row: 1 / 3;
+}
+
 .search-icon,
 .bell-icon {
     width: 24px;
