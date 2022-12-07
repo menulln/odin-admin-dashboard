@@ -209,6 +209,10 @@ main {
     background-color: var(--dark-white);
 }
 
+.main-heading {
+    margin: 24px 0 0 12px;
+}
+
 .projects {
     grid-row: 1 / 3;
 }
@@ -216,15 +220,36 @@ main {
 .project-box {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 12px;
+    padding: 12px;
+}
+
+.card {
+    background-color: var(--white);
+    height: 200px;
+}
+
+.card-buttons > img {
+    width: 32px;
+    height: 32px;
+}
+
+.announcements-box {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: var(--white);
+    margin: 12px;
 }
 
 .trending {
     grid-column: 2 / 3;
 }
 
-.card-buttons > img {
-    width: 32px;
-    height: 32px;
+.trending-box {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    background-color: var(--white);
+    margin: 12px;
 }
 
 .trending-avatar {
