@@ -33,6 +33,7 @@ nav {
     grid-template-rows: repeat(12, 1fr);
     align-items: center;
     padding: 12px;
+    height: 60%;
 }
 
 .logo-icon,
@@ -62,6 +63,42 @@ nav {
 
 .nav-wrapper > p {
     font-weight: 700;
+}
+
+.home {
+    grid-row: 3 / 4;
+}
+
+.profile {
+    grid-row: 4 / 5;
+}
+
+.messages {
+    grid-row: 5 / 6;
+}
+
+.history {
+    grid-row: 6 / 7;
+}
+
+.tasks {
+    grid-row: 7 / 8;
+}
+
+.communities {
+    grid-row: 8 / 9;
+}
+
+.settings {
+    grid-row: 10 / 11;
+}
+
+.support {
+    grid-row: 11 / 12;
+}
+
+.privacy {
+    grid-row: 12 / 13;
 }
 
 header {
