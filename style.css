@@ -134,16 +134,27 @@ header {
 
 .header-profile {
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-columns:  3fr 1fr 1fr 2fr;
     justify-items: end;
     align-items: center;
 }
 
+.bell-icon {
+    grid-column: 2 / 3;
+}
+
+.avatar-small {
+    grid-column: 3 / 4;
+}
+
+.name-small {
+    grid-column: 4 / 5;
+}
+
 .header-greeting {
     display: grid;
-    grid-template-columns: 1fr 8fr;
+    grid-template-columns: 1fr 10fr;
     grid-template-rows: 1fr 1fr;
-    column-gap: 0.5vw;
 }
 
 .greeting {
@@ -313,7 +324,6 @@ main {
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 1fr;
-    column-gap: 12px;
 }
 
 .trend > * {
