@@ -10,8 +10,8 @@
     --light-black: #121212;
     --gray: #636363;
     --primary-clr: #003F7D;
-    --light-primary-clr: #1E9FE4;
-    --dark-primary-clr: #1585C2;
+    --light-primary-clr: #004F9E;
+    --dark-primary-clr: #002C58;
     --accent-clr: #FF8E00;
 }
 
@@ -247,6 +247,8 @@ main {
     border-radius: 8px;
     padding: 32px 24px 24px 24px;
     box-shadow: 3px 3px 4px 1px rgba(0, 0, 0, 0.03);
+    transition: all 0.1s ease-out;
+    position: relative;
 }
 
 .card-title {
@@ -350,4 +352,28 @@ main {
 .announcement-content,
 .trending-title {
     color: var(--gray);
+}
+
+.nav-wrapper > *:hover,
+.header-buttons > *:hover,
+.header-profile > *:hover,
+.card-button:hover {
+    cursor: pointer;
+}
+
+.nav-wrapper > *:hover {
+    color: #D3D3D3;
+}
+
+.header-buttons > *:hover {
+    background-color: var(--dark-primary-clr);
+}
+
+.card:hover {
+    transition: all 0.1s ease-out;
+    transform: translate(-2px, -2px);
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.03),
+    3px 3px 4px 1px rgba(0, 0, 0, 0.03),
+    4px 4px 4px 1px rgba(0, 0, 0, 0.03),
+    5px 5px 4px 1px rgba(0, 0, 0, 0.03);
 }
